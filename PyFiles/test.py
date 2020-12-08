@@ -31,32 +31,17 @@ BLUE = (0, 0, 255)
 
 # Создаем игру и окно
 pygame.init()
-pygame.mixer.init()
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("My Game")
-clock = pygame.time.Clock()
-all_sprites = pygame.sprite.Group()
-player = pygame.image.load('PNG\Cars\truckcabin.png').convert_alpha()
-all_sprites.add(player)
 
-# Цикл игры
-running = True
-while running:
-    # Держим цикл на правильной скорости
-    clock.tick(FPS)
-    # Ввод процесса (события)
-    for event in pygame.event.get():
-        # check for closing window
-        if event.type == pygame.QUIT:
-            running = False
-
-    # Обновление
-    all_sprites.update()
+def run_game():
+    # Цикл игры
+    running = True
     
-    # Рендеринг
-    screen.fill(BLACK)
-    all_sprites.draw(screen)
-    # После отрисовки всего, переворачиваем экран
-    pygame.display.flip()
+    while running:
+        for event in  pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+    
+   
 
 pygame.quit()
