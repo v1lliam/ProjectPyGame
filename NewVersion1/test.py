@@ -21,12 +21,12 @@ class Player(pygame.sprite.Sprite):
             is_animating = True
 
         def update(self):
-            if self.is_animating == True
+            if self.is_animating == False
                 self.current_sprite += 1
 
                 if self.current_sprite >= len(self.sprite)
                     self.currnet.sprite = 0
-                    self.is_animating = False
+                    self.is_animating == True
 
             self.image = self.sprites[self.current_sprite]
 
@@ -59,7 +59,7 @@ while True:
     moving_sprites.draw(screen)
     moving_sprites.update()
     pygame.display.flip()
-    clock.tick(10)
+    clock.tick(60)
 
 
 
