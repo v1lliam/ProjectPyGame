@@ -946,7 +946,7 @@ def main():
                         user.speed = -2
                     elif event.key == pygame.K_RIGHT:
                         user.speed = 2
-                    elif event.key == pygame.K_UP:
+                    elif event.key == pygame.K_SPACE:
                         user.fire = 1
                     elif event.key == pygame.K_ESCAPE:
                     	quit()
