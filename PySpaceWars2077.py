@@ -920,7 +920,7 @@ def main():
                         - 40, white)
             displaytext('Exit', 32, width / 2 - 20, height * 3 / 4,
                         white)
-            displaytext('Made by: Nikita "Mynixa" Rod, Igor "V1lliam" Zot, Egor "Moskva" Moskvin, Ksusha "Chuvashka" Med, Arina "SKotina" Val', 14, width - 490, height - 15,
+            displaytext('Made by: Nikita "Mynixa" Rod, Igor "V1lliam" Zot, Egor "Moskva" Moskvin, Ksusha "Chuvashka" Med, Arina "SKotina" Val, Anya "Staraya" Avdonina', 14, width - 490, height - 15,
                         white)
 
 
